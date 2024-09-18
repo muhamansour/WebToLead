@@ -14,7 +14,7 @@ body {
     background-color: rgba(255, 255, 255, 0.1); /* Fondo transparente */
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 15px rgba(249, 247, 247, 0.2);
     max-width: 900px;
     width: 100%;
     display: flex;
@@ -57,6 +57,7 @@ label {
 }
 
 input, select {
+    width: 70%;
     padding: 8px;
     margin: 5px 0 2px;
     border: 1px solid #ccc;
@@ -65,7 +66,11 @@ input, select {
     background-color: #ffffff; /* Fondo blanco */
     display: flex;
     align-items: center;
+   /* box-sizing: border-box;*/
+    margin-bottom: 5px;
 }
+
+
 
 input[type="text"], input[type="email"], input[type="tel"], select {
     padding-left: 100px; /* Espacio para el ícono */
@@ -85,7 +90,7 @@ input::placeholder, select {
 
 .input-container {
     position: relative;
-    margin-bottom: 15px;
+    margin-bottom: 0px;
 }
 
 button, input[type="submit"] {
@@ -133,3 +138,27 @@ button:hover, input[type="submit"]:hover {
 h1, h2, label, p {
     font-family: 'Roboto', sans-serif;
 }
+
+.image-container {
+    margin-top: 50px; /* Aumentar el margen superior de la imagen para más separación */
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Mantiene la sombra suave */
+}
+.right-container {
+    width: 40%; /* El espacio restante para la imagen y el texto */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Alinea los elementos hacia el inicio del contenedor */
+}
+
+.side-text {
+    font-size: 24px;
+    color: #ffffff; /* Texto blanco */
+    margin-bottom: 40px; /* Aumentar la separación debajo del texto */
+}
+

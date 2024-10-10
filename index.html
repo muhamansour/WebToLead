@@ -11,48 +11,47 @@
     <h1>¡Cuéntanos tu problema, estamos aquí para ayudarte!</h1>
     <p>Si estás teniendo algún inconveniente con nuestros servicios, por favor completa el siguiente formulario y nuestro equipo de soporte se pondrá en contacto contigo lo antes posible.</p>
 
-    <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00Dak000009b0K1" method="POST">
-        <input type=hidden name="orgid" value="00Dak000009b0K1">
-        <input type=hidden name="retURL" value="http://">
-        
-        <label for="name">Nombre de contacto</label>
-        <input id="name" maxlength="80" name="name" size="20" type="text" placeholder="Ingresa tu nombre" />
-        
+    <!-- Formulario unificado de Salesforce -->
+    <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00DHs00000BEiPM" method="POST">
+        <input type=hidden name="orgid" value="00DHs00000BEiPM">
+        <input type=hidden name="retURL" value="http://muhamansour.github.io/WebToLead/Thanks.html">
+
+        <!-- Campos de entrada -->
+        <label for="name">Nombre del contacto</label>
+        <input id="name" maxlength="80" name="name" size="20" type="text" placeholder="Ingresa tu nombre" /><br>
+
         <label for="email">Correo electrónico</label>
-        <input id="email" maxlength="80" name="email" size="20" type="text" placeholder="Ingresa tu correo electrónico" />
-        
+        <input id="email" maxlength="80" name="email" size="20" type="text" placeholder="Ingresa tu correo electrónico" /><br>
+
         <label for="phone">Teléfono</label>
-        <input id="phone" maxlength="40" name="phone" size="20" type="text" placeholder="Ingresa tu número de teléfono" />
-        
-        <label for="company">Empresa</label>
-        <input id="company" maxlength="80" name="company" size="20" type="text" placeholder="Ingresa el nombre de tu empresa" />
-        
-        <label for="product">Producto</label>
-        <select id="00Nak000003XbFK" name="00Nak000003XbFK" title="Product">
-            <option value="">--Selecciona un producto--</option>
-            <option value="GC1040">GC1040</option>
-            <option value="GC1060">GC1060</option>
-            <option value="GC3020">GC3020</option>
-            <option value="GC3040">GC3040</option>
-            <option value="GC3060">GC3060</option>
-            <option value="GC5020">GC5020</option>
-            <option value="GC5040">GC5040</option>
-            <option value="GC5060">GC5060</option>
-            <option value="GC1020">GC1020</option>
-        </select>
-        
+        <input id="phone" maxlength="40" name="phone" size="20" type="text" placeholder="Ingresa tu número de teléfono" /><br>
+
         <label for="subject">Asunto</label>
-        <input id="subject" maxlength="80" name="subject" size="20" type="text" placeholder="Ingresa el asunto" />
-        
-        <label for="description">Descripción</label>
-        <textarea name="description" placeholder="Describe tu problema o inquietud"></textarea>
-        
+        <input id="subject" maxlength="80" name="subject" size="20" type="text" placeholder="Ingresa el asunto" /><br>
+
+        <label for="reason">Motivo del caso</label>
+        <select id="reason" name="reason">
+            <option value="General Inquiry">Consulta general</option>
+            <option value="Lost Card">Tarjeta perdida</option>
+            <option value="Transaction Dispute">Desconocimiento de consumo</option>
+            <option value="Appointment">Cita</option>
+        </select><br>
+
+        <label for="currency"><span class="assistiveText">*</span>Divisa del caso</label>
+        <select id="currency" name="currency">
+            <option value="USD" selected="selected">USD - Dólar estadounidense</option>
+            <option value="ARS">ARS - Pesos argentinos</option>
+        </select><br>
+
+        <label for="00NHs00001BV0bd">País</label>
+        <input id="00NHs00001BV0bd" maxlength="255" name="00NHs00001BV0bd" size="20" type="text" placeholder="Ingresa el país donde se realizó la transacción" /><br>
+
+        <label for="00NHs00001BUyLy">Costo estimado</label>
+        <input id="00NHs00001BUyLy" name="00NHs00001BUyLy" size="20" type="text" placeholder="Ingresa el monto de la transacción" /><br>
+
         <input type="submit" name="submit" value="Enviar">
     </form>
     
-    <div class="footer">
-        <p>Nos preocupamos por brindarte un servicio de calidad.</p>
-    </div>
 </div>
 
 </body>

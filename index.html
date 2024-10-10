@@ -1,58 +1,41 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
+<!--  If necessary, please modify the charset parameter to specify the        -->
+<!--  character set of your HTML page.                                        -->
+<!--  ----------------------------------------------------------------------  -->
 
-<div class="container">
-    <h1>¡Cuéntanos tu problema, estamos aquí para ayudarte!</h1>
-    <p>Si estás teniendo algún inconveniente con nuestros servicios, por favor completa el siguiente formulario y nuestro equipo de soporte se pondrá en contacto contigo lo antes posible.</p>
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
 
-    <!-- Formulario unificado de Salesforce -->
+    <!--  ----------------------------------------------------------------------  -->
+    <!--  NOTE: Please add the following <FORM> element to your page.             -->
+    <!--  ----------------------------------------------------------------------  -->
+    
     <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00DHs00000BEiPM" method="POST">
-        <input type=hidden name="orgid" value="00DHs00000BEiPM">
-        <input type=hidden name="retURL" value="http://muhamansour.github.io/WebToLead/Thanks.html">
-
-        <!-- Campos de entrada -->
-        <label for="name">Nombre del contacto</label>
-        <input id="name" maxlength="80" name="name" size="20" type="text" placeholder="Ingresa tu nombre" /><br>
-
-        <label for="email">Correo electrónico</label>
-        <input id="email" maxlength="80" name="email" size="20" type="text" placeholder="Ingresa tu correo electrónico" /><br>
-
-        <label for="phone">Teléfono</label>
-        <input id="phone" maxlength="40" name="phone" size="20" type="text" placeholder="Ingresa tu número de teléfono" /><br>
-
-        <label for="subject">Asunto</label>
-        <input id="subject" maxlength="80" name="subject" size="20" type="text" placeholder="Ingresa el asunto" /><br>
-
-        <label for="reason">Motivo del caso</label>
-        <select id="reason" name="reason">
-            <option value="General Inquiry">Consulta general</option>
-            <option value="Lost Card">Tarjeta perdida</option>
-            <option value="Transaction Dispute">Desconocimiento de consumo</option>
-            <option value="Appointment">Cita</option>
-        </select><br>
-
-        <label for="currency"><span class="assistiveText">*</span>Divisa del caso</label>
-        <select id="currency" name="currency">
-            <option value="USD" selected="selected">USD - Dólar estadounidense</option>
-            <option value="ARS">ARS - Pesos argentinos</option>
-        </select><br>
-
-        <label for="00NHs00001BV0bd">País</label>
-        <input id="00NHs00001BV0bd" maxlength="255" name="00NHs00001BV0bd" size="20" type="text" placeholder="Ingresa el país donde se realizó la transacción" /><br>
-
-        <label for="00NHs00001BUyLy">Costo estimado</label>
-        <input id="00NHs00001BUyLy" name="00NHs00001BUyLy" size="20" type="text" placeholder="Ingresa el monto de la transacción" /><br>
-
-        <input type="submit" name="submit" value="Enviar">
+    
+    <input type=hidden name="orgid" value="00DHs00000BEiPM">
+    <input type=hidden name="retURL" value="http://">
+    
+    <!--  ----------------------------------------------------------------------  -->
+    <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+    <!--  these lines if you wish to test in debug mode.                          -->
+    <!--  <input type="hidden" name="debug" value=1>                              -->
+    <!--  <input type="hidden" name="debugEmail"                                  -->
+    <!--  value="muhamad.mansour@nespon.com">                                     -->
+    <!--  ----------------------------------------------------------------------  -->
+    
+    <label for="name">Nombre del contacto</label><input  id="name" maxlength="80" name="name" size="20" type="text" /><br>
+    
+    <label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+    
+    <label for="phone">Teléfono</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+    
+    <label for="subject">Asunto</label><input  id="subject" maxlength="80" name="subject" size="20" type="text" /><br>
+    
+    <label for="description">Descripción</label><textarea name="description"></textarea><br>
+    
+    <input type="hidden"  id="external" name="external" value="1" /><br>
+    
+    <input type="submit" name="submit">
+    
     </form>
     
-</div>
-
-</body>
-</html>

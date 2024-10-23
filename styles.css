@@ -75,7 +75,7 @@ input#fraud_charge_date {
     border-radius: 4px;
     background-color: #f9f9f9;
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
-    margin-bottom: 15px;
+    margin-bottom: 45px;
     transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     text-align: left; /* Alinea el texto a la izquierda */
 }
